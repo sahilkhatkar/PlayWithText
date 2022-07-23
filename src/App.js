@@ -28,8 +28,8 @@ function App() {
       <Navbar title="PlayWithText" mode={mode} switchMode={switchMode}/>
       <div className='container'>
       <Routes>
-          <Route exact path="/about" element={<About mode={mode}/>}/>
           <Route exact path="/" element={<TextForm heading="Type the text here to analyse" mode={mode}/>}/>
+          <Route exact path="/about" element={<About mode={mode}/>}/>
       </Routes>
       </div>
     </Router>

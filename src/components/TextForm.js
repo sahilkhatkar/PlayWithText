@@ -33,10 +33,10 @@ export default function TextForm(props) {
             {/* <label htmlFor="exampleFormControlTextarea1" className="form-label">Processing your text ...</label> */}
             <textarea className="form-control" value={text} style={{backgroundColor: props.mode==='dark'?'grey':'#fff7e0', color: props.mode==='light'?'black':'white'}} onChange={handleOnChange} id="textArea" rows="8"></textarea>
         </div>
-        <button type="button" className="btn btn-primary mx-2" onClick={convToUpCase}>Convert to UpperCase</button>
-        <button type="button" className="btn btn-primary mx-2" onClick={convToLoCase}>Convert to LowerCase</button>
-        <button type="button" className="btn btn-primary mx-2" onClick={copyText}>Copy text</button>
-        <button type="button" className="btn btn-primary mx-2" onClick={clearText}>Clear text</button>
+        <button type="button" className="btn btn-primary mx-1 my-1" onClick={convToLoCase}>Convert to LowerCase</button>
+        <button type="button" className="btn btn-primary mx-1 my-1" onClick={copyText}>Copy text</button>
+        <button type="button" className="btn btn-primary mx-1 my-1" onClick={clearText}>Clear text</button>
+        <button type="button" className="btn btn-primary mx-1 my-1" onClick={convToUpCase}>Convert to UpperCase</button>
     </div>
 
     <div className="container my-3" style={{color: props.mode==='light'?'black':'white'}}>
